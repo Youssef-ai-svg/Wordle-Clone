@@ -1,0 +1,122 @@
+@import url('https://fonts.cdnfonts.com/css/clear-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Clear Sans';
+    background-color: rgb(18, 18, 18);
+
+
+}
+
+#container {
+    display: flex;
+    background-color: rgb(18, 18, 18);
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header {
+    border-bottom: 1px solid white;
+}
+
+.titol,
+h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#tauler-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#tauler {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square {
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teclat-container {
+    width: 30%;
+    height: 200px;
+    position: absolute;
+    margin-top: 35%;
+}
+
+.fila-teclat {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.fila-teclat button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    cursor: pointer;
+    background-color: rgb(117, 117, 117);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+    transition: 200ms;
+}
+
+.fila-teclat button.wide-button {
+    flex-grow: 1.5;
+}
+
+.fila-teclat button:hover {
+    background-color: rgb(54, 54, 54);
+
+}
+
+.space-half {
+    flex-grow: 0.5;
+}
+
+
+.active {
+    border: 2px solid rgb(144, 202, 249);
+}
